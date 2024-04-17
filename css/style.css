@@ -1,0 +1,143 @@
+/* ESTILO GENERALIZADO 
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');*/
+
+:root {
+    --grey:#eee;
+    --grey2:#e2e5e9;
+    --white:#fff;
+    --dark-grey:#8a8787;
+    --dark-grey-2:#333232;
+    --green:#bdd741;
+    --red:#f85570;
+    --black:#080808;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--grey);
+    min-width: 350px;
+    font-size: 16px;
+}
+
+.content {
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* LOGIN */
+
+.container-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login form {
+    background-color: var(--grey2);
+    padding: 2em;
+    border-radius: 15px;
+    border: 2px solid rgba(8, 8, 8, 0.1);
+    width: 350px;
+}
+
+.container-login form h3 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1.4em;
+}
+
+.container-login form .form-control {
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    position: relative;
+}
+
+.container-login form input {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.7em 0.5em;
+    min-width: 200px;
+    border-bottom: 4px solid var(--green);
+}
+
+.container-login form input.erroInp{
+    border-bottom: 4px solid var(--red);
+}
+
+.container-login form label {
+   position: absolute;
+   font-weight: 700;
+   color: var(--black);
+   top:8px;
+   left: 10px;
+   transition: 0.5s;
+   user-select: none;
+}
+
+.container-login form label.labelActive {
+    font-size: 0.8em;
+    top:-16px;
+    left: 0px;
+}
+
+.container-login form label.labelErro {
+    color: var(--red);
+}
+
+.msg-erro-login {
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    min-height: 1.5em;
+}
+
+.container-login form button {
+    background-color: var(--green);
+    width: 100%;
+    padding: 1em 0;
+    min-width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--black);
+    transition: 0.3s;
+}
+
+.container-login form button:hover {
+    background-color: #a8be36;
+}
